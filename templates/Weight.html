@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Child Weight</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 <body>
-    <h1>Child Weight</h1>
+<center> <header><h1>Child Weight</h1></header> </center>
+<!-- Return Buttons -->
+<center>
+<table cellspacing="20">
+    <tr>
+        <td>
+           <div id="return home" class='button btn btn-dark'><a href='/home'>Home</a></div>
+        </td>
+        <td>
+           <div id="go to growth" class='button btn btn-dark'><a href='/Growth.html'>Growth</a></div>
+        </td>
+    </tr>
+</table>
+</center>
+<!-- Article -->
+    <center><article>
+    <p>Hier steht Text</p>
+    </article></center>
+<hr><center>
+    <article>
+        Hier kommen die Eingaben rein
+        <li>Woche</li>
+        <li>Gewicht</li>
+    </article></center>
+<hr>
+   <center> <img src='static/images/girl_weight.png' alt="girl_weight" height="auto" width="600">
+   </center>
+
+<hr>
+
+
 </body>
 </html>

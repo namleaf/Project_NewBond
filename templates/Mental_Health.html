@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mental Health Quizz</title>
+    <title>Mental Health Questionnaire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 <body>
-<h1>Mental Health Quizz</h1>
+    <h1>Here comes the Questionnaire</h1>
+		<div id='container'>
+            <div class="head card-header">Mental Health</div>
+            <div class="container">
+                <div class="card border-success mb-3">
+                    <h2><div id="title" class="card-header">Welcome to this Questionnaire</div></h2>
+                    <div class="card-body text-success">
+                        <div id='quiz'></div>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">
+					<div id="Zurück zur Hauptseite" class='button btn btn-dark'><a href='/home'>Zur Hauptseite</a></div>
+                        <div id="Zurück zur Hauptseite" class='button btn btn-dark'><a href='/home'>Home</a></div>
+                        <div class='button btn btn-success' id='next'><a href='#'>Next</a></div>
+                		<div class='button btn btn-warning' id='prev'><a href='#'>Prev</a></div>
+                		<div class='button btn btn-danger' id='start'> <a href='#'>Start Over</a></div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+
+
+
 </body>
 </html>

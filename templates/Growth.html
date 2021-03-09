@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Child Growth</title>
+    <style>
+        body {
+        background-color:cee6b4;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+
 </head>
 <body>
-    <h1>Child Growth Table</h1>
-    <p>Das ist der Template Ordner</p>
-    <p>{{content}}</p>
+<!-- Logo -->
+
+
+<!-- Header -->
+<center><h1>Child Growth</h1></center>
+
+<!-- Return Buttons -->
+<center>
+<table cellspacing="20">
+    <tr>
+        <td>
+           <div id="return home" class='button btn btn-dark'><a href='/home'>Home</a></div>
+        </td>
+        <td>
+           <div id="go to weight" class='button btn btn-dark'><a href='/Weight.html'>Weight</a></div>
+        </td>
+    </tr>
+</table>
+</center>
+<!-- Article -->
+    <center><article>
+    <p>Hier steht Text</p>
+    </article></center>
+<hr><center>
+    <article>
+        Hier kommen die Eingaben rein
+        <li>Woche</li>
+        <li>Größe</li>
+    </article></center>
+<hr>
+   <center> <img src='static/images/girl_growth.png' alt="girl_growth" height="auto" width="600">
+   </center>
+
+<hr>
+
+
 </body>
 </html>
