@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="index-bg" >
 <head>
     <meta charset="utf-8">
     <title>Project NewBond</title>
@@ -9,39 +9,73 @@
 
 <body>
 <!-- Title -->
-<header>
-    <center><h1>Welcome to New Bond</h1></center
-</header>
-<!-- section -->
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <img src="https://images.unsplash.com/photo-1555856248-2676336c0e9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="pregnant belly" width="300" height=auto>
-            </td>
-            <td>
+<footer class="main">
+    <div class="main-container">
+        <h1>Welcome to NewBond</h1>
+            <div class="introduction">
+        <!-- section -->
+                <div class="picture"><img src="https://images.unsplash.com/photo-1555856248-2676336c0e9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="pregnant belly" width="300" height=auto>
+                </div>
+
                 <h2><em>What is this about?</em></h2>
-                <p>This is our small sized project about Childcare in the first weeks</p>
-                <p>Aim of this project is to document the growth of the child to aid
+                <p>This is our small sized project about Childcare in the first weeks
+                Aim of this project is to document the growth of the child to aid
                 mid wives which life is already to stressfull.  </p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <center><h2><str> For The Child </str> </h2>
-    <ul>
-        <li><a href="Growth.html">Growth</a></li>
-        <li><a href="Weight.html">Weight</a></li>
-    </ul>
-    </center>
-    <hr>
-        <center><h2> For The Mother  </h2>
-     <ul>
-       <li><a href="Mental_Health.html">Mental Health</a></li>
-     </ul></center>
-    <hr>
+    </div>
+        <!-- Input für Profil-->
+        <div class="profile">
+            <h3>Profil</h3>
+            <form method="post">
+                <div class="table-center">
+                <table>
+                    <tr>
+                       <td>Name Mutter:</td>
+                        <td><input type="text" name="nm_motha" ></td>
+                    </tr>
+                    <tr>
+                        <td>Name LebenspartnerIn:</td>
+                        <td><input type="text" name="nm_partna"> </td>
+                    </tr>
+                    <tr>
+                        <td>Name Kind:</td>
+                        <td><input type="text" name="nm_bebe"></td>
+                        <td>Geschlecht vom Kind:</td>
+                        <td><input type="radio" name="girl"></td>
+                        <td>W</td>
+                         <td><input type="radio" name="boy"></td>
+                        <td>M</td>
+
+                    </tr>
+                </table>
+                </div>
+                <p><input type="submit" value="submit"/></p>
+            </form>
+            </div>
+        <!-- selection -->
+            <div class="info-container">
+                <div class="child">
+
+                <h3><str> Für das  Kind </str> </h3>
+                <ul>
+                <li><a href="Growth.html" >Wachstum</a></li>
+                <li><a href="Weight.html" >Gewicht</a></li>
+                </ul>
+                </div>
+
+                <div class="mother">
+                <h3> Für die Mutter  </h3>
+                <ul>
+                <li><a href="Mental_Health.html">Wohlbefinden</a></li>
+                </ul>
+                </div>
+            </div>
+    </div>
+    <footer class="footer">
+        <p>Project under <a href="https://techlabs.org/" >Techlabs</a></p>
+    </footer>
 
 
-    <p>Project under <a href="https://techlabs.org/">Techlabs</a></p>
+</div>
 </body>
 </html>
 

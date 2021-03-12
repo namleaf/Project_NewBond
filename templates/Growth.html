@@ -1,53 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="growth-bg" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Child Growth</title>
-    <style>
-        body {
-        background-color:cee6b4;
-        }
-    </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 
 
 </head>
+
 <body>
 <!-- Logo -->
 
 
 <!-- Header -->
-<center><h1>Child Growth</h1></center>
+<div class="main">
+    <div class="main-container">
+        <h1>Child Growth</h1>
 
-<!-- Return Buttons -->
-<center>
-<table cellspacing="20">
-    <tr>
-        <td>
-           <div id="return home" class='button btn btn-dark'><a href='/home'>Home</a></div>
-        </td>
-        <td>
-           <div id="go to weight" class='button btn btn-dark'><a href='/Weight.html'>Weight</a></div>
-        </td>
-    </tr>
-</table>
-</center>
+        <div class="info-container">
+    <!-- Return Buttons -->
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <a href="index.html">Home</a>
+            </td>
+            <td>
+                <p> <a href='Weight.html'>Weight</a> </p>
+            </td>
+        </tr>
+    </table>
+    </div>
 <!-- Article -->
-    <center><article>
-    <p>Hier steht Text</p>
-    </article></center>
-<hr><center>
-    <article>
-        Hier kommen die Eingaben rein
-        <li>Woche</li>
-        <li>Größe</li>
-    </article></center>
+    <div class="introduction">
+        <p>Auf dieser Seite können Sie das Wachstum ihres Kindes dokumentieren.</p>
+    </div>
+        <hr>
+        <div class="info-container">
+            <div class="table-center">
+                <ul>
+            <li>Woche</li><input type="text" name="week">
+            <li>Größe in cm</li><input type="text" name="length">
+                </ul>
+        </div>
+        </div>
+        <hr>
+            <div class = "picture" >
+                <img src='static/images/Length_Céline.png' alt="length_girl" height="auto" width="550">
+            </div>
+        <div class="picture">
+            <img src='static/images/Length_Nam.png' alt="length_boy" height="auto" width="550">
+        </div>
 <hr>
-   <center> <img src='static/images/girl_growth.png' alt="girl_growth" height="auto" width="600">
-   </center>
 
-<hr>
 
+    <footer class="footer">
+        <p>Project under <a href="https://techlabs.org/" >Techlabs</a></p>
+    </footer>
+
+</div>
 
 </body>
 </html>

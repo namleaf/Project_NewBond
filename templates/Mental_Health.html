@@ -1,32 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="mental-bg" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mental Health Questionnaire</title>
+    <title>Mental Health </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 <body>
-    <h1>Here comes the Questionnaire</h1>
-		<div id='container'>
-            <div class="head card-header">Mental Health</div>
-            <div class="container">
-                <div class="card border-success mb-3">
-                    <h2><div id="title" class="card-header">Welcome to this Questionnaire</div></h2>
-                    <div class="card-body text-success">
-                        <div id='quiz'></div>
-                    </div>
-                    <div class="card-footer bg-transparent border-success">
-					<div id="Zurück zur Hauptseite" class='button btn btn-dark'><a href='/home'>Zur Hauptseite</a></div>
-                        <div id="Zurück zur Hauptseite" class='button btn btn-dark'><a href='/home'>Home</a></div>
-                        <div class='button btn btn-success' id='next'><a href='#'>Next</a></div>
-                		<div class='button btn btn-warning' id='prev'><a href='#'>Prev</a></div>
-                		<div class='button btn btn-danger' id='start'> <a href='#'>Start Over</a></div>
-                    </div>
-                </div>
-            </div>
-    	</div>
+<div class="main">
+<div class="main-container">
+<h1>Wie fühlen Sie sich? </h1>
+    <p>Hallo %name_mother% , Sie sind kürzlich Mutter geworden.</p>
+    <p>Haben Sie das Gefühl, dass sich die ganze Situation in letzter Zeit anders anfühlt?
+        Dieser Fragebogen soll ihnen helfen, ihre Lage einzuschätzen.
+        Bitte geben Sie jeweils die Antwort (a,b,c oder d), die Ihren Gefühlen
+        in den vergangenen sieben Tagen am nächsten kommt, nicht nur wie Sie sich heute fühlen.
+        Im Abschluss werden die Fragen ausgewertet und nach der Edinburgh Postnatal Depression Scale (EDPS) eingestuft.
+        Vielen Dank für ihre Teilnahme.
+       </p>
+<hr>
+    <a href='/index.html' >Home</a>
+<hr>
+
+<!-- Fragen und Antworten -->
+<h2>Fragebogen</h2>
+<ul>
+    <li>
+        <h4>1. Ich konnte lachen und die komische Seite des Lebens sehen:</h4>
+        <div>
+         <label for="answer1a"> So wie immer </label>
+         <input type="checkbox" id="answer1a" name="answer1a">
+        </div>
+         <div>
+         <label for="answer1b"> Nicht ganz so wie sonst </label>
+         <input type="checkbox" id="answer1b" name="answer1b">
+        </div>
+         <div>
+         <label for="answer1c"> Eindeutig nicht so wie sonst </label>
+         <input type="checkbox" id="answer1c" name="answer1c">
+        </div>
+         <div>
+         <label for="answer1d"> Gar nicht </label>
+         <input type="checkbox" id="answer1d" name="answer1d">
+        </div>
+    </li>
+    <li>
+        <h4>2. Ich habe mich auf Dinge gefreut:</h4>
+                <div>
+         <label for="answer2a"> So wie immer </label>
+         <input type="checkbox" id="answer2a" name="answer2a">
+        </div>
+         <div>
+         <label for="answer2b"> Eher weniger als sonst </label>
+         <input type="checkbox" id="answer2b" name="answer2b">
+        </div>
+         <div>
+         <label for="answer2c"> Auf jeden Fall weniger </label>
+         <input type="checkbox" id="answer2c" name="answer2c">
+        </div>
+         <div>
+         <label for="answer2d"> Fast gar nicht </label>
+         <input type="checkbox" id="answer2d" name="answer2d">
+        </div>
+    </li>
+    <li>
+        <h4>3. Ich habe mir die Schuld gegeben, wenn etwas schief gelaufen ist:</h4>
+                <div>
+         <label for="answer3a"> Ja, meistens </label>
+         <input type="checkbox" id="answer3a" name="answer3a">
+        </div>
+         <div>
+         <label for="answer3b"> Ja, manchmal </label>
+         <input type="checkbox" id="answer3b" name="answer3b">
+        </div>
+         <div>
+         <label for="answer3c"> Nicht sehr oft </label>
+         <input type="checkbox" id="answer3c" name="answer3c">
+        </div>
+         <div>
+         <label for="answer3d"> Nein, nie </label>
+         <input type="checkbox" id="answer3d" name="answer3d">
+        </div>
+    </li>
+    <li>
+        <h4>4. Ich war grundlos ängstlich oder besorgt:</h4>
+                <div>
+         <label for="answer4a"> Nein, gar nicht </label>
+         <input type="checkbox" id="answer4a" name="answer4a">
+        </div>
+         <div>
+         <label for="answer4b"> Fast nie </label>
+         <input type="checkbox" id="answer4b" name="answer4b">
+        </div>
+         <div>
+         <label for="answer4c"> Ja, manchmal </label>
+         <input type="checkbox" id="answer4c" name="answer4c">
+        </div>
+         <div>
+         <label for="answer4d"> Ja, sehr oft </label>
+         <input type="checkbox" id="answer4d" name="answer4d">
+        </div>
+    </li>
+    <li>
+        <h4>5. Ich hatte Angst oder Panik ohne richtigen Grund:</h4>
+                <div>
+         <label for="answer5a"> Ja, ziemlich oft </label>
+         <input type="checkbox" id="answer5a" name="answer5a">
+        </div>
+         <div>
+         <label for="answer5b"> Ja, manchmal </label>
+         <input type="checkbox" id="answer5b" name="answer5b">
+        </div>
+         <div>
+         <label for="answer5c"> Nein, nicht oft </label>
+         <input type="checkbox" id="answer5c" name="answer5c">
+        </div>
+         <div>
+         <label for="answer5d"> Nein, gar nicht </label>
+         <input type="checkbox" id="answer5d" name="answer5d">
+        </div>
+    </li>
+    <li>
+        <h4>6. Mir ist alles zu viel geworden:</h4>
+                <div>
+         <label for="answer6a"> Ja, die meiste Zeit bin ich überhaupt nicht zurechtgekommen </label>
+         <input type="checkbox" id="answer6a" name="answer6a">
+        </div>
+         <div>
+         <label for="answer6b"> Ja, manchmal bin ich nicht so gut zurechtgekommen wie sonst </label>
+         <input type="checkbox" id="answer6b" name="answer6b">
+        </div>
+         <div>
+         <label for="answer6c"> Nein, die meiste Zeit bin ich gut zurechtgekommen </label>
+         <input type="checkbox" id="answer6c" name="answer6c">
+        </div>
+         <div>
+         <label for="answer6d"> Nein, ich bin so gut zurechtgekommen wie immer </label>
+         <input type="checkbox" id="answer6d" name="answer6d">
+        </div>
+    </li>
+    <li>
+        <h4>7. Ich war so unglücklich, dass ich Schlafprobleme hatte:</h4>
+                <div>
+         <label for="answer7a"> Ja, meistens </label>
+         <input type="checkbox" id="answer7a" name="answer7a">
+        </div>
+         <div>
+         <label for="answer7b"> Ja, manchmal </label>
+         <input type="checkbox" id="answer7b" name="answer7b">
+        </div>
+         <div>
+         <label for="answer7c"> Nein, nicht sehr oft </label>
+         <input type="checkbox" id="answer7c" name="answer7c">
+        </div>
+         <div>
+         <label for="answer7d"> Nein, gar nicht </label>
+         <input type="checkbox" id="answer7d" name="answer7d">
+        </div>
+    </li>
+    <li>
+        <h4>8. Ich fühlte mich müde oder elend:</h4>
+                <div>
+         <label for="answer8a"> Ja, meistens </label>
+         <input type="checkbox" id="answer8a" name="answer8a">
+        </div>
+         <div>
+         <label for="answer8b"> Ja, ziemlich oft </label>
+         <input type="checkbox" id="answer8b" name="answer8b">
+        </div>
+         <div>
+         <label for="answer8c"> Nein, nicht sehr oft </label>
+         <input type="checkbox" id="answer8c" name="answer8c">
+        </div>
+         <div>
+         <label for="answer8d"> Nein, gar nicht </label>
+         <input type="checkbox" id="answer8d" name="answer8d">
+        </div>
+    </li>
+    <li>
+        <h4>
+            9. Ich war so unglücklich, dass ich geweint habe:
+        </h4>
+                <div>
+         <label for="answer9a"> Ja, meistens </label>
+         <input type="checkbox" id="answer9a" name="answer9a">
+        </div>
+         <div>
+         <label for="answer9b"> Ja, ziemlich oft </label>
+         <input type="checkbox" id="answer9b" name="answer9b">
+        </div>
+         <div>
+         <label for="answer9c"> Nur gelegentlich </label>
+         <input type="checkbox" id="answer9c" name="answer9c">
+        </div>
+         <div>
+         <label for="answer9d"> Nein, nie </label>
+         <input type="checkbox" id="answer9d" name="answer9d">
+        </div>
+    </li>
+    <li>
+        <h4>
+            10. Ich habe daran gedacht, mir etwas anzutun:
+        </h4>
+                <div>
+         <label for="answer10a"> Ja, ziemlich oft </label>
+         <input type="checkbox" id="answer10a" name="answer10a">
+        </div>
+         <div>
+         <label for="answer10b"> Manchmal </label>
+         <input type="checkbox" id="answer10b" name="answer10b">
+        </div>
+         <div>
+         <label for="answer10c"> Fast nie </label>
+         <input type="checkbox" id="answer10c" name="answer10c">
+        </div>
+         <div>
+         <label for="answer10d"> Nie </label>
+         <input type="checkbox" id="answer10d" name="answer10d">
+        </div>
+    </li>
+
+</ul>
+            <p><input type="submit" value="submit"/></p>
 
 
 
+<hr>
+
+
+
+    <footer class="footer">
+        <p>Project under <a href="https://techlabs.org/" >Techlabs</a></p>
+    </footer>
+
+</div>
+</div>
 </body>
 </html>
