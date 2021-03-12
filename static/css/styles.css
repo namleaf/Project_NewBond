@@ -1,11 +1,115 @@
    <!-- CSS style global changes -->
-    <style>
-    body {  background-color: #ccf2f4;;
+   <!-- colorhunt for color hexcodes -->
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    *{
+    margin:0;
+    padding:0;
     }
-    hr {
-     border-style: none;
-     border-top-style: dotted;
-     border-color: grey;
-     border-width: 5px;
-     width: 5%;
-     }
+
+    /* background color per page */
+    .index-bg {
+    background-color: #f5c0c0;
+    }
+
+    .growth-bg{
+    background-color:#cee6b4;
+    }
+
+    .weight-bg{
+    background-color: #fff9b0;
+    }
+
+    .mental-bg{
+    background-color: #b4aee8;
+    }
+
+    /* Properties */
+
+    body, html {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
+	}
+
+    .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .main {
+    padding: 1em;
+        text-align: center;
+    }
+
+    .main-container {
+    height: 100vh;
+    width: 100%;
+    }
+
+    .info-container {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    .table-center{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+
+    }
+
+    .picture{
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+	.child {
+	width: 50%;
+	padding: 0.8em;
+	}
+
+	.mother {
+	width: 50%;
+	padding: 0.8em;
+	}
+
+	ul {
+	list-style: none;
+	}
+
+    a:link{
+    color:blue;
+    }
+
+    a:hover {
+    color:blue;
+    }
+
+	hr {
+     	border-style: none;
+     	border-top-style: dotted;
+     	border-color: grey;
+     	border-width: 5px;
+     	width: 5%;
+     	}
+
+    .footer{
+
+    width: 100%;
+    background-color: #dddddd;
+    text-align: right;
+    flex-shrink: 0;
+    }
+
+    p, label {
+    font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    input {
+    margin: .4rem;
+    }
