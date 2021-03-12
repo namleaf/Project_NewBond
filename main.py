@@ -6,27 +6,34 @@ from flask import Flask, redirect, url_for, render_template, request
 
 app = Flask(__name__)
 
+# Willkommenseite
 @app.route("/")
-@app.route("/home")
+@app.route("/Welcome.html")
+def welcome():
+    return render_template('Welcome.html')
+
+# Navigationsseite
+@app.route("/index.html")
 def home():
     return render_template('index.html')
+
 
 #Data Source
 file = 'Data/WHO.xlsx'
 # Load spreadsheet: xl
 xl = pd.ExcelFile(file)
 
+
+#Child Growth Documentation
 @app.route("/Growth.html")
 def growth():
-
-
 
     # load a sheet into a DataFrame by name
     df1 = xl.parse('Größe Mädchen (cm)')
     # create copy to avoid data manipulation
     girl_length = df1.copy()
 
-    # diagramm data
+    # diagram data
     plt.figure(0)
     plt.plot(girl_length.Woche, girl_length['M'], color='green', label='Mittelwert')
 
@@ -38,10 +45,12 @@ def growth():
 
     # legend
     plt.legend(loc='lower right')
-    plt.savefig('static/images/girl_growth.png')
+
 
     return render_template('Growth.html')
 
+
+#Child Weight Documentation
 @app.route("/Weight.html")
 def weight():
 
@@ -62,13 +71,18 @@ def weight():
 
     return render_template('Weight.html')
 
+
+#Mental Health Quizz
 @app.route("/Mental_Health.html")
 def quizz():
     return render_template('Mental_Health.html')
 
+
+#Future Goal if user has no permission to enter admin
+#user gets redirected
 @app.route("/admin")
 def admin():
-    return redirect(url_for("home"))
+    return redirect(url_for("index.html"))
 
 
 if __name__ == "__main__":
