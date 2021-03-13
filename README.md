@@ -1,2 +1,2 @@
 # Project_NewBond
-# A webpage to help mid wives and new mothers to take care of the child
+# A webpage to help midwives and new families to ease the documenting process of the child.
